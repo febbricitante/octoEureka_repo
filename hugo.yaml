@@ -46,11 +46,13 @@ params:
     buttonlink: '#'
     # Hero image (from static/images/___)
     image: illustrations/worker.svg
-    # Footer logos (from static/images/logos/clients/*.svg)
+    #Footer logos (from static/images/logos/clients/*.svg)
     # urls are optional
-  #    clientlogos:
-  #      - logo: systek
-  #        url: https://google.com
+    clientlogos:
+      - logo: chatGPT
+        url: https://openai.com
+      - logo: XAI
+        url: https://grok.com/
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
     - title: Features
@@ -89,19 +91,19 @@ params:
     tiles:
       - title: CV/Resume Builder
         icon: doc-sync
-        text: Boost your chances <br>Customize to stand out
+        text: Build Resumes That Win Interviews in Minutes
         url: /
         buttonText: Learn More
 
       - title: Career Coach
         icon: laptop-cloud
-        text: Get personalized guidance <br>land your dream job FAST
+        text: Get Personalized Career Plans and Job Advice 24/7
         url: /
         buttonText: Learn More
 
       - title: Learning Platform
         icon: laptop-globe
-        text: Grow every day<br>courses - resources - plans
+        text: Use Top Courses to Boost Your Skills and Promotions
         url: /
         buttonText: Learn More
 
@@ -122,12 +124,12 @@ params:
         text: Skyrocket your career with Fresh’s tailored tools—advance faster with personalized applications and a proven higher response rate. Achieve your goals steadily
         icon: mobile-feed
 
-  section3:
-    title: One platform
-    subtitle: To rule them all
-    image: illustrations/mockups/app-mockup.png
-    buttonText: Get started
-    buttonLink: '#'
+  #  section3:
+  #    title: One platform
+  #    subtitle: To rule them all
+  #    image: illustrations/mockups/app-mockup.png
+  #    buttonText: Get started
+  #    buttonLink: '#'
 
   section4:
     title: Our Clients love us!
