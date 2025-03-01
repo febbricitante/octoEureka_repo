@@ -1,19 +1,18 @@
-baseURL: http://something-fresh.org/
+baseURL: http://www.indabo.com/
 languageCode: en-us
-title: Hugo Fresh Theme
+title: Indabo
 
 module:
   # uncomment line below for local development of module
-  # workspace: hugo.work
-  imports:
-    path: github.com/StefMa/hugo-fresh
-
+  workspace: hugo.yaml
+  #imports:
+  # path: github.com/StefMa/hugo-Indabo
 
 googleAnalytics: # Put in your tracking code without quotes like this: UA-XXX for universal tracking or G-XXX analytics v4 tracking
 # Disables warnings
 disableKinds:
-- taxonomy
-- taxonomyTerm
+  - taxonomy
+  - taxonomyTerm
 markup:
   goldmark:
     renderer:
@@ -27,201 +26,183 @@ params:
   # Preloader ensures images are loaded before displaying to the user. If you don't want it uncomment to set it to false
   # preloader: false
   navbarlogo:
-  # Logo (from static/images/logos/___)
-    image: logos/fresh.svg
+    # Logo (from static/images/logos/___)
+    image: logos/navbar-logo.svg
     link: /
     # Default width/height. Uncomment if you need to change
     # width: 112
     # height: 28
   font:
-    name: "Open Sans"
-    sizes: [400,600]
+    name: 'Open Sans'
+    sizes: [400, 600]
   hero:
     # Main hero title
-    title: Manage. Deploy.
+    title: Revolutionize Your Career with Indabo AI
     # Hero subtitle (optional)
-    subtitle: Lorem ipsum sit dolor amet is dummy text used by the typography industry
+    subtitle: Can’t Land Your Dream Job? Indabo Guides You 24/7 <br>Act TODAY
     # Button text
-    buttontext: Get started
+    buttontext: Join for Free Now
     # Where the main hero button links to
-    buttonlink: "#"
+    buttonlink: '#'
     # Hero image (from static/images/___)
     image: illustrations/worker.svg
     # Footer logos (from static/images/logos/clients/*.svg)
     # urls are optional
-    clientlogos:
-    - logo: systek
-      url: https://google.com
-    - logo: tribe
-      url: https://stefma.github.io/hugo-fresh/
-    - logo: kromo
-      url: https://github.com/StefMa/hugo-fresh
-    - logo: infinite
-      url: https://hugo-fresh.vercel.app/
-    - logo: gutwork
-      url: https://bulma.io/
+  #    clientlogos:
+  #      - logo: systek
+  #        url: https://google.com
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
-  - title: Features
-    url: /
-  - title: Pricing
-    url: /
-  - title: Dropdown
-    sublinks:
-    - title: Dropdown item
+    - title: Features
       url: /
-    - title: Dropdown item
+    - title: Pricing
       url: /
-    - title: Dropdown item
+    - title: Log in
       url: /
-  - title: Log in
-    url: /
-  - title: Sign up
-    url: /
-    button: true
+    - title: Sign up
+      url: /
+      button: true
   sidebar:
     # Logo (from static/images/logos/___.svg)
-    logo: fresh-square
+    logo: indabo-square
     sections:
-    - title: User
-      icon: user
-      links:
-      - text: Profile
-        url: /
-      - text: Account
-        url: /
-      - text: Settings
-        url: /
-    - title: Messages
-      icon: envelope
-      links:
-      - text: Inbox
-        url: /
-      - text: Compose
-        url: /
-    - title: Images
-      icon: image
-      links:
-      - text: Library
-        url: /
-      - text: Upload
-        url: /
-    - title: Settings
-      icon: cog
-      links:
-      - text: User settings
-        url: /
-      - text: App settings
-        url: /
+      - title: User
+        icon: user
+        links:
+          - text: Profile
+            url: /
+          - text: Account
+            url: /
+          - text: Settings
+            url: /
+      - title: Settings
+        icon: cog
+        links:
+          - text: User settings
+            url: /
+          - text: App settings
+            url: /
+
   section1:
-    title: Great power comes
-    subtitle: with great responsibility
+    title: Stand Out to Employers
+    subtitle: Become the candidate they cannot ignore
     tiles:
-    - title: App builder
-      icon: mouse-globe
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Free trial
-    - title: Cloud integration
-      icon: laptop-cloud
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Get started
-    - title: Add-ons & plugins
-      icon: plug-cloud
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Get started
+      - title: CV/Resume Builder
+        icon: doc-sync
+        text: Boost your chances <br>Customize to stand out
+        url: /
+        buttonText: Learn More
+
+      - title: Career Coach
+        icon: laptop-cloud
+        text: Get personalized guidance <br>land your dream job FAST
+        url: /
+        buttonText: Learn More
+
+      - title: Learning Platform
+        icon: laptop-globe
+        text: Grow every day<br>courses - resources - plans
+        url: /
+        buttonText: Learn More
+
   section2:
-    title: You're here because you want the best
-    subtitle: And we know it
+    title: You are Driven to Be the Best
+    subtitle: We Make It Happen
     features:
-    - title: Powerful and unified interface
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      # Icon (from static/images/illustrations/icons/___.svg)
-      icon: laptop-globe
-    - title: Cross-device synchronisation
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      icon: doc-sync
-    - title: Nomad system
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      icon: mobile-feed
+      - title: AI-Driven Career Blueprint
+        text: Unlock your potential with Fresh’s personalized AI coaching—build your career path, get step-by-step instructions, and boost hireability. Transform your future now
+        # Icon (from static/images/illustrations/icons/___.svg)
+        icon: laptop-globe
+
+      - title: Always-On Expert Guidance
+        text: Rely on Fresh’s 24/7 AI coach—tailored CVs, cover letters, interview tips. Get more responses from employers, headhunters, and and coaching for promotions. Succeed anytime, anywhere
+        icon: doc-sync
+
+      - title: Rapid Career Advancement
+        text: Skyrocket your career with Fresh’s tailored tools—advance faster with personalized applications and a proven higher response rate. Achieve your goals steadily
+        icon: mobile-feed
+
   section3:
     title: One platform
     subtitle: To rule them all
     image: illustrations/mockups/app-mockup.png
     buttonText: Get started
-    buttonLink: "#"
+    buttonLink: '#'
+
   section4:
     title: Our Clients love us!
-    subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
+    subtitle: We are driven by the mission of helping others achieve the best career results they can imagine
     clients:
-    - name: Irma Walters
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-      job: Accountant
-      img: 1
-    - name: John Bradley
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-      job: Financial Analyst
-      img: 2
-    - name: Gary Blackman
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-      job: HR Manager
-      img: 3
+      - name: Irma Walters
+        quote: Fresh helped me land an $80K job in 2 months!
+        job: Marketing Specialist
+        img: 1
+
+      - name: John Bradley
+        quote: The AI coaching transformed my resume—I got hired in weeks.
+        job: Financial Analyst
+        img: 2
+
+      - name: Gary Blackman
+        quote: Indabo’s learning guidance gave me the edge I needed for my promotion!
+        job: HR Manager
+        img: 3
+
   section5:
     title: Drop us a line or two
     subtitle: We'd love to hear from you
     buttonText: Send Message
     # action: https://formspree.io/f/<form_id>
     # method: POST
+
   footer:
     # Logo (from static/images/logos/___)
-    logo: fresh-white-alt.svg
+    logo: Indabo-square.svg
     # Social Media Title
     socialmediatitle: Follow Us
     # Social media links (GitHub, Twitter, etc.). All are optional.
     socialmedia:
-    - link: https://github.com/StefMa
-      # Icons are from Font Awesome
-      icon: github
-    - link: https://dribbble.com/#
-      icon: dribbble
-    - link: https://facebook.com/#
-      icon: facebook
-    - link: https://twitter.com/StefMa91
-      icon: twitter
-    - link: https://bitbucket.org/#
-      icon: bitbucket
+      - link: https://github.com/StefMa
+        # Icons are from Font Awesome
+        icon: github
+      - link: https://dribbble.com/#
+        icon: dribbble
+      - link: https://facebook.com/#
+        icon: facebook
+      - link: https://twitter.com/StefMa91
+        icon: twitter
+      - link: https://bitbucket.org/#
+        icon: bitbucket
     bulmalogo: true
     quicklinks:
       column1:
-        title: "Product"
+        title: 'Product'
         links:
-        - text: Discover features
-          link: /
-        - text: Why choose our product?
-          link: /
-        - text: Compare features
-          link: /
-        - text: Our roadmap
-          link: /
-        - text: AGB
-          link: /agb
+          - text: Discover features
+            link: /
+          - text: Why choose our product?
+            link: /
+          - text: Compare features
+            link: /
+          - text: Our roadmap
+            link: /
+          - text: AGB
+            link: /agb
       column2:
-        title: "Docs"
+        title: 'Docs'
         links:
-        - text: Get started
-          link: /
-        - text: User guides
-          link: /
-        - text: Admin guide
-          link: /
-        - text: Developers
-          link: /
+          - text: Get started
+            link: /
+          - text: User guides
+            link: /
+          - text: Admin guide
+            link: /
+          - text: Developers
+            link: /
       column3:
-        title: "Blog"
+        title: 'Blog'
         links:
-        - text: Latest news
-          link: /blog/first
-        - text: Tech articles
-          link: /blog/second
+          - text: Latest news
+            link: /blog/first
+          - text: Tech articles
+            link: /blog/second
