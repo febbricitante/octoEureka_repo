@@ -8016,7 +8016,8 @@ Hero styles
 .hero-body {
   padding-top: 6rem;
   padding-bottom: 6rem; }
-  .hero-body .title, .hero-body .subtitle {
+  .hero-body .title,
+  .hero-body .subtitle {
     font-family: 'Open Sans', sans-serif; }
   .hero-body .title.is-bold {
     font-weight: 700; }
@@ -8025,6 +8026,11 @@ Hero styles
 
 .hero-foot img.partner-logo {
   height: 70px; }
+
+#hero-image {
+  transition: opacity 0.5s ease-in-out;
+  max-width: 100%;
+  height: auto; }
 
 /* ==========================================================================
 Fresh Footer

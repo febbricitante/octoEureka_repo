@@ -1,32 +1,49 @@
-{{- $hero       := .Site.Params.hero }}
-{{- $title      := index $hero "title" }}
-{{- $subtitle   := index $hero "subtitle" }}
-{{- $buttonText := index $hero "buttontext" }}
-{{- $buttonLink := index $hero "buttonlink" }}
-{{- $image      := index $hero "image" }}
+{{- $hero := .Site.Params.hero }} {{- $title := index $hero "title" }} {{- $subtitle := index $hero "subtitle" }} {{- $buttonText := index $hero
+"buttontext" }} {{- $buttonLink := index $hero "buttonlink" }} {{- $image := index $hero "image" }}
 <div class="hero-body">
   <div class="container">
     <div class="columns is-vcentered">
       <div class="column is-5 is-offset-1 landing-caption">
-        <h1 class="title is-1 is-bold is-spaced">
-          {{ $title | safeHTML}}
-        </h1>
+        <h1 class="title is-1 is-bold is-spaced">{{ $title | safeHTML}}</h1>
         {{ with $subtitle }}
-        <h2 class="subtitle is-5 is-muted">
-          {{ . | safeHTML}}
-        </h2>
+        <h2 class="subtitle is-5 is-muted">{{ . | safeHTML}}</h2>
         {{ end }}
         <p>
-          <a class="button cta rounded primary-btn raised" href="{{ $buttonLink }}">
-            {{ $buttonText }}
-          </a>
+          <a class="button cta rounded primary-btn raised" href="{{ $buttonLink }}"> {{ $buttonText }} </a>
         </p>
       </div>
       <div class="column is-5 is-offset-1">
-        <figure class="image is-4by3">
-          <img src="{{ printf "images/%s" $image | relURL }}" alt="Description">
-        </figure>
+        <figure class="image is-4by3"><img id="hero-image" alt="Dynamic Hero Image" /></figure>
       </div>
+
+      <script>
+                      // List of images to cycle through
+                      const images = [
+                        "{{ "images/hero1.jpg" | relURL }}",
+                        "{{ "images/hero2.jpg" | relURL }}",
+                        "{{ "images/hero3.jpg" | relURL }}",
+                        "{{ "images/hero4.jpg" | relURL }}",
+                        "{{ "images/hero5.jpg" | relURL }}"
+                      ];
+
+                      let index = 0; // Start index
+                      const imgElement = document.getElementById("hero-image");
+
+                      function changeImage() {
+                imgElement.style.opacity = 0; // Fade out
+                setTimeout(() => {
+                  index = (index + 1) % images.length;
+                  imgElement.src = images[index];
+                  imgElement.style.opacity = 1; // Fade in
+                }, 888); // Delay before switching image
+              }
+
+                // Set the first image immediately
+        imgElement.src = images[index];
+
+                      // Change image every 5 seconds
+                      setInterval(changeImage, 7000);
+      </script>
     </div>
   </div>
 </div>
