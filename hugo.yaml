@@ -58,9 +58,9 @@ params:
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
     - title: Features
-      url: /
+      url: /features/
     - title: Pricing
-      url: /
+      url: /pricing/
     - title: Log in
       url: /
     - title: Sign up

@@ -60,7 +60,7 @@
           <span class="button signup-button rounded secondary-btn raised"> {{ .title }} </span>
         </a>
         {{- else }}
-        <a href="{{ .url }}" class="navbar-item is-secondary"> {{ .title }} </a>
+        <a href="{{ .url | relURL }}" class="navbar-item is-secondary"> {{ .title }} </a>
         {{- end }} {{- end }}
       </div>
     </div>
