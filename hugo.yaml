@@ -53,6 +53,8 @@ params:
         url: https://openai.com
       - logo: XAI
         url: https://grok.com/
+      - logo: cursor
+        url: https://cursor.com/
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
     - title: Features

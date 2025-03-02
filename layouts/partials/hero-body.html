@@ -17,32 +17,46 @@
       </div>
 
       <script>
-                      // List of images to cycle through
-                      const images = [
-                        "{{ "images/hero1.jpg" | relURL }}",
-                        "{{ "images/hero2.jpg" | relURL }}",
-                        "{{ "images/hero3.jpg" | relURL }}",
-                        "{{ "images/hero4.jpg" | relURL }}",
-                        "{{ "images/hero5.jpg" | relURL }}"
-                      ];
+        // List of images to cycle through
+        const images = [
+          "{{ "images/hero1.jpg" | relURL }}",
+          "{{ "images/hero2.jpg" | relURL }}",
+          "{{ "images/hero3.jpg" | relURL }}",
+          "{{ "images/hero4.jpg" | relURL }}",
+          "{{ "images/hero5.jpg" | relURL }}"
+        ];
 
-                      let index = 0; // Start index
-                      const imgElement = document.getElementById("hero-image");
+        let index = 0; // Start index
+        const imgElement = document.getElementById("hero-image");
 
-                      function changeImage() {
-                imgElement.style.opacity = 0; // Fade out
-                setTimeout(() => {
-                  index = (index + 1) % images.length;
-                  imgElement.src = images[index];
-                  imgElement.style.opacity = 1; // Fade in
-                }, 888); // Delay before switching image
-              }
+        function changeImage() {
+          // Step 1: Fade out the image completely before switching
+          imgElement.style.transition = "opacity 0.8s ease-in-out";
+          imgElement.style.opacity = 0;
 
-                // Set the first image immediately
+          setTimeout(() => {
+            // Step 2: Change the image source only AFTER it has faded out
+            index = (index + 1) % images.length;
+            imgElement.src = images[index];
+
+            // Step 3: Add a short delay before fading back in
+            setTimeout(() => {
+              imgElement.style.opacity = 1; // Fade in smoothly
+            }, 50); // Small delay before fade-in starts
+          }, 800); // This should match the fade-out duration
+        }
+
+        // Step 4: Hide the image initially and preload the first image
+        imgElement.style.opacity = 0;
+        imgElement.onload = () => {
+          setTimeout(() => {
+            imgElement.style.opacity = 1; // Ensure a smooth first appearance
+          }, 100);
+        };
         imgElement.src = images[index];
 
-                      // Change image every 5 seconds
-                      setInterval(changeImage, 7000);
+        // Change image every 7 seconds
+        setInterval(changeImage, 7000);
       </script>
     </div>
   </div>
