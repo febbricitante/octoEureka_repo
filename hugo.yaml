@@ -39,11 +39,11 @@ params:
     # Main hero title
     title: Revolutionize Your Career with Indabo AI
     # Hero subtitle (optional)
-    subtitle: Can’t Land Your Dream Job? Indabo Guides You 24/7 <br>Act TODAY
+    subtitle: Can't Land Your Dream Job? Indabo Guides You 24/7 <br>Act TODAY
     # Button text
     buttontext: Join for Free Now
     # Where the main hero button links to
-    buttonlink: '#'
+    buttonlink: https://app.indabo.com
     # Hero image (from static/images/___)
     image: illustrations/worker.svg
     #Footer logos (from static/images/logos/clients/*.svg)
@@ -62,9 +62,9 @@ params:
     - title: Pricing
       url: /pricing/
     - title: Log in
-      url: /
+      url: https://app.indabo.com
     - title: Sign up
-      url: /
+      url: https://app.indabo.com
       button: true
   sidebar:
     # Logo (from static/images/logos/___.svg)
@@ -114,16 +114,16 @@ params:
     subtitle: We Make It Happen
     features:
       - title: AI-Driven Career Blueprint
-        text: Unlock your potential with Fresh’s personalized AI coaching—build your career path, get step-by-step instructions, and boost hireability. Transform your future now
+        text: Unlock your potential with Fresh's personalized AI coaching—build your career path, get step-by-step instructions, and boost hireability. Transform your future now
         # Icon (from static/images/illustrations/icons/___.svg)
         icon: laptop-globe
 
       - title: Always-On Expert Guidance
-        text: Rely on Fresh’s 24/7 AI coach—tailored CVs, cover letters, interview tips. Get more responses from employers, headhunters, and and coaching for promotions. Succeed anytime, anywhere
+        text: Rely on Fresh's 24/7 AI coach—tailored CVs, cover letters, interview tips. Get more responses from employers, headhunters, and and coaching for promotions. Succeed anytime, anywhere
         icon: doc-sync
 
       - title: Rapid Career Advancement
-        text: Skyrocket your career with Fresh’s tailored tools—advance faster with personalized applications and a proven higher response rate. Achieve your goals steadily
+        text: Skyrocket your career with Fresh's tailored tools—advance faster with personalized applications and a proven higher response rate. Achieve your goals steadily
         icon: mobile-feed
 
   #  section3:
