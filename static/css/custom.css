@@ -1,0 +1,130 @@
+/* Custom navbar styles */
+.navbar.is-fresh {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: none !important;
+  animation: none !important;
+}
+
+.navbar.is-fresh .navbar-item.is-secondary {
+  color: #4a4a4a;
+  font-weight: 500;
+}
+
+.navbar.is-fresh .navbar-item.is-secondary:hover {
+  color: #7510f7;
+}
+
+.navbar.is-fresh .button.primary-btn {
+  background-color: #7510f7;
+  border-color: transparent;
+  color: white;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  height: auto;
+  border-radius: 6px;
+}
+
+.navbar.is-fresh .button.primary-btn:hover {
+  background-color: #6209d9;
+}
+
+/* Ensure consistent navbar height and spacing */
+.navbar.is-fresh {
+  min-height: 4rem;
+}
+
+.navbar.is-fresh .navbar-brand {
+  min-height: 4rem;
+}
+
+.navbar.is-fresh .navbar-item {
+  padding: 0 1rem;
+}
+
+.navbar.is-fresh .navbar-item img {
+  max-height: 2.5rem;
+}
+
+/* Add padding to body to prevent content from going under navbar */
+body {
+  padding-top: 4rem;
+}
+
+/* Completely disable navbar clone */
+#navbar-clone {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* If navbar clone ever becomes visible, ensure it has the same styling */
+#navbar-clone.is-active {
+  display: none !important; /* Keep it hidden regardless of is-active class */
+}
+
+/* Remove any transitions or animations */
+.navbar.is-fresh * {
+  transition: none !important;
+  animation: none !important;
+}
+
+/* Custom styling for navbar to ensure single row across all devices */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-brand .ml-auto {
+  margin-left: auto !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-brand .navbar-item img {
+    max-width: 90px;
+    height: auto;
+  }
+
+  .navbar-brand .button {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-brand .menu-icon-wrapper svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar-brand .navbar-item {
+    padding: 0.5rem;
+  }
+}
+
+/* Ensure navbar spacing is consistent */
+.navbar.is-fresh {
+  min-height: 4rem;
+}
+
+.navbar.is-fresh .container {
+  display: flex;
+  align-items: center;
+}
+
+/* Ensure button styling is consistent */
+.button.signup-button.rounded.primary-btn {
+  background-color: #7510f7;
+  color: white;
+  border-radius: 6px;
+  border: none;
+}
+
+.button.signup-button.rounded.primary-btn:hover {
+  background-color: #6209d9;
+}
