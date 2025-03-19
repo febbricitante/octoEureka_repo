@@ -57,35 +57,47 @@ params:
         url: https://cursor.com/
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
-    - title: Features
-      url: /features/
-    - title: Pricing
-      url: /pricing/
-    - title: Log in
-      url: https://app.indabo.com
-    - title: Sign up
+    - title: Log in / Sign up
       url: https://app.indabo.com
       button: true
   sidebar:
     # Logo (from static/images/logos/___.svg)
     logo: indabo-square
     sections:
-      - title: User
-        icon: user
+      - title: Features
+        icon: book
         links:
-          - text: Profile
-            url: /
-          - text: Account
-            url: /
-          - text: Settings
-            url: /
-      - title: Settings
-        icon: cog
+          - text: Resume Builder
+            url: /features/resume-builder/
+          - text: Cover Letter Builder
+            url: /features/cover-letter-builder/
+          - text: Interview Prep
+            url: /features/interview-prep/
+          - text: AI Resume Picture
+            url: /features/ai-resume-picture/
+      - title: Pricing
+        icon: credit-card
         links:
-          - text: User settings
-            url: /
-          - text: App settings
-            url: /
+          - text: Free Plan
+            url: /pricing/free-plan/
+          - text: Pro Plan
+            url: /pricing/pro-plan/
+          - text: Pay as you go
+            url: /pricing/pay-as-you-go/
+      - title: Sign in
+        icon: sign-in
+        links:
+          - text: Sign in
+            url: https://app.indabo.com
+          - text: Log in
+            url: https://app.indabo.com
+      # - title: Theme
+      #   icon: lightbulb
+      #   links:
+      #     - text: Light
+      #       url: /theme/light/
+      #     - text: Dark
+      #       url: /theme/dark/
 
   section1:
     title: Stand Out to Employers
@@ -109,22 +121,22 @@ params:
         url: /
         buttonText: Learn More
 
-  section2:
-    title: You are Driven to Be the Best
-    subtitle: We Make It Happen
-    features:
-      - title: AI-Driven Career Blueprint
-        text: Unlock your potential with Fresh's personalized AI coaching—build your career path, get step-by-step instructions, and boost hireability. Transform your future now
-        # Icon (from static/images/illustrations/icons/___.svg)
-        icon: laptop-globe
+  # section2:
+  #   title: You are Driven to Be the Best
+  #   subtitle: We Make It Happen
+  #   features:
+  #     - title: AI-Driven Career Blueprint
+  #       text: Unlock your potential with Fresh's personalized AI coaching—build your career path, get step-by-step instructions, and boost hireability. Transform your future now
+  #       # Icon (from static/images/illustrations/icons/___.svg)
+  #       icon: laptop-globe
 
-      - title: Always-On Expert Guidance
-        text: Rely on Fresh's 24/7 AI coach—tailored CVs, cover letters, interview tips. Get more responses from employers, headhunters, and and coaching for promotions. Succeed anytime, anywhere
-        icon: doc-sync
+  #     - title: Always-On Expert Guidance
+  #       text: Rely on Fresh's 24/7 AI coach—tailored CVs, cover letters, interview tips. Get more responses from employers, headhunters, and and coaching for promotions. Succeed anytime, anywhere
+  #       icon: doc-sync
 
-      - title: Rapid Career Advancement
-        text: Skyrocket your career with Fresh's tailored tools—advance faster with personalized applications and a proven higher response rate. Achieve your goals steadily
-        icon: mobile-feed
+  #     - title: Rapid Career Advancement
+  #       text: Skyrocket your career with Fresh's tailored tools—advance faster with personalized applications and a proven higher response rate. Achieve your goals steadily
+  #       icon: mobile-feed
 
   #  section3:
   #    title: One platform
@@ -177,7 +189,7 @@ params:
         icon: twitter
       - link: https://bitbucket.org/#
         icon: bitbucket
-    bulmalogo: true
+    bulmalogo: false
     quicklinks:
       column1:
         title: 'Product'

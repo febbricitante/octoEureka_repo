@@ -3,7 +3,7 @@
 .Site.Params.navbarlogo.height | default 28 }}
 <nav id="navbar-clone" class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
   <div class="container">
-    <div class="navbar-brand">
+    <div class="navbar-brand is-flex full-width">
       {{- if $sidebarVisible }}
       <div class="navbar-item">
         <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible">
@@ -26,3 +26,12 @@
     </div>
   </div>
 </nav>
+
+<style>
+  .navbar-item.ml-auto {
+    margin-left: auto;
+  }
+  .navbar-brand.full-width {
+    width: 100%;
+  }
+</style>
